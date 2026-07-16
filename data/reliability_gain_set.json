@@ -1,0 +1,52 @@
+{
+ "sample": "all 48 studies entering the numeric-gain analysis; blind second coding from dossiers, 2026-07-17 (pre-adjudication agreement)",
+ "n": 48,
+ "rubric_B": {
+  "n_both_scorable": 47,
+  "alpha_ordinal": 0.74,
+  "exact_agreement": 0.7,
+  "within_one": 0.98
+ },
+ "field_agreement": {
+  "deployment_level": {
+   "agree": 46,
+   "n": 48,
+   "pct": 96
+  },
+  "feasibility_mechanism": {
+   "agree": 32,
+   "n": 48,
+   "pct": 67
+  },
+  "problem_class": {
+   "agree": 39,
+   "n": 48,
+   "pct": 81
+  },
+  "layer": {
+   "agree": 48,
+   "n": 48,
+   "pct": 100
+  }
+ },
+ "gain_extraction": {
+  "second_extracted": 34,
+  "second_null": 14,
+  "values_within_5pct": 28,
+  "pct_within_5pct_of_coextracted": 82
+ },
+ "resolution": "All disagreements were adjudicated by the review team against the primary full text; adjudicated values carry a dated note in the coded database. Adjudication changed 5 of 48 B scores and 7 of 48 extracted gains; two gains (a learning-curve metric and a prediction-accuracy metric) were removed under the scheduling-objective eligibility rule, so 46 studies enter the gain analysis.",
+ "macros": {
+  "alphaBGainSet": "0.74",
+  "exactBGainSet": 70,
+  "withinOneBGainSet": 98,
+  "nGainSetDual": 48,
+  "agreeDeployGainSet": 96,
+  "agreeFeasGainSet": 67,
+  "agreeProbClassGainSet": 81,
+  "agreeLayerGainSet": 100,
+  "agreeGainExtract": 82,
+  "nBChangedAdjud": 5,
+  "nGainChangedAdjud": 7
+ }
+}

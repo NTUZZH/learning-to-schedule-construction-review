@@ -1,0 +1,39 @@
+{
+ "nr_rates_pct": {
+  "training_data": 8,
+  "feasibility_mechanism": 51,
+  "deployment_level": 2,
+  "state_representation": 19,
+  "encoder": 32,
+  "inference_time_not_reported": 74
+ },
+ "eval_counts": {
+  "size-generalization": 25,
+  "distribution-shift": 31,
+  "ablation": 42,
+  "held-out-instances": 40,
+  "multiple-seeds": 23,
+  "statistical-test": 19,
+  "NR": 9
+ },
+ "baseline_counts": {
+  "metaheuristic": 46,
+  "single-untuned-PDR": 23,
+  "random": 10,
+  "none": 10,
+  "other-DRL": 33,
+  "multiple-PDRs": 27,
+  "other": 8,
+  "human-planner": 15,
+  "exact-CP-MILP": 12,
+  "commercial-tool": 5,
+  "NR": 5,
+  "tuned-rules": 11
+ },
+ "deployment": {
+  "simulation": 118,
+  "pilot": 3,
+  "NR": 3,
+  "field": 3
+ }
+}

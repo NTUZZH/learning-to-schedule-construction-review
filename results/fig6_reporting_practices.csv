@@ -1,0 +1,5 @@
+scope,n,inference_time,code,data,seeds_or_stats,feasibility_mech,held_out,inference_time_count,code_count,data_count,seeds_or_stats_count,feasibility_mech_count,held_out_count
+overall,127,26,8,9,28,49,31,33,10,11,35,62,40
+L1,63,32,3,8,27,41,30,20,2,5,17,26,19
+L2,26,19,4,8,42,62,46,5,1,2,11,16,12
+L3,38,21,18,11,18,53,24,8,7,4,7,20,9

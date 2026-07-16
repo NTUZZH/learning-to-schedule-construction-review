@@ -1,0 +1,4 @@
+layer,n,precedence,resource-capacity,max-time-lags,min-time-lags,multi-skill,calendars,setup-times,transport,spatial,multi-project,due-dates-SLA,stochastic-durations,dynamic-arrivals,disruptions-rescheduling,mold-buffer-curing
+L1,63,42,53,1,4,8,0,0,17,20,8,9,14,9,18,2
+L2,26,17,21,1,0,3,3,3,8,5,3,13,6,6,3,5
+L3,38,3,24,1,2,1,1,1,6,12,4,3,11,2,7,0

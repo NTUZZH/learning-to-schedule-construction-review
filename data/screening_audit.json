@@ -1,0 +1,132 @@
+{
+ "date": "2026-07-17",
+ "excluded_sample_audit": {
+  "n_sampled": 15,
+  "upheld": 13,
+  "disputed": 2,
+  "resolution": "Both disputed exclusions were re-adjudicated against the records' own abstracts and reinstated as included (C1315: a DRL agent selects budget-constrained bridge maintenance actions, Layer 3; C0129: the reinforcement-learning engine generates construction-sequencing recommendations, Layer 1). Both are abstract-only records whose rubric dimensions are largely not assessable."
+ },
+ "prenet_recall_audit": {
+  "n_raw_unique_reconstructed": 9601,
+  "n_discarded_reconstructed": 6436,
+  "n_sampled": 150,
+  "n_flagged": 3,
+  "dispositions": [
+   "already in corpus via the primary search (C0728)",
+   "outside the review window (2015)",
+   "Automation in Construction 2026 article (10.1016/j.autcon.2026.106796), initially screened from its title; the abstract, subsequently obtained via institutional access (2026-07-17), confirms the exclusion: the learned components are a CTGAN data augmenter and nested DNNs performing supervised M&R treatment-type classification scored by decision accuracy against expert labels, a one-shot classification rather than a sequencing, assignment, or timing decision (contrast the included T0057, whose imitation-learned output is the intervention timing itself)."
+  ],
+  "note": "The one known keyword-pre-net miss during the review (T0056) was recovered by iteration-3 snowballing."
+ },
+ "critical_records_dual_coding": {
+  "records": [
+   "C0262",
+   "C1277",
+   "C0065",
+   "C0946"
+  ],
+  "summary": "Blind second coding of the corpus's remaining top-baseline-tier and deployed studies not already covered by the gain-set dual coding. Agreement: layer 4/4, deployment level 3/4 (C0946 pilot-vs-field wording judgment; the study's own phrase 'field tests' retained), B 4/4 within the not-assessable convention (C1277 and C0065 are abstract-only and -1 on both sides of the comparison where scorable), E 3/4 (C0262 excerpt did not show the statistical tests the full text reports)."
+ },
+ "full_pass2_exclusion_audit": {
+  "date": "2026-07-20",
+  "protocol": "Every full-text-stage exclusion (n=83) was independently re-screened blind at title/abstract level by a second coder under the archived pass-1 rulebook (retrieval/screening/RULES.md); the second coder saw no recorded decisions or reasons.",
+  "n": 83,
+  "second_coder_verdicts": {
+   "exclude": 42,
+   "unsure_fulltext": 19,
+   "include": 22
+  },
+  "dispositions": {
+   "upheld_outright": 42,
+   "not_assessable_from_record_text": "19 records, mostly title-only dossiers and verifiability/integrity exclusions; each recorded exclusion rests on dossier, full-text, or citation-integrity evidence documented in the coded record",
+   "duplicate_reports": "8 include-verdicts are duplicate reports of studies the corpus counts once under the canonical id (C0503->C0092, C0504->C0091, C0708 and C0912->S0228, C0966->C0230, S0196->C0797, C1145->C0509, C1671->C1265); the blind screener correctly recognized the underlying studies as eligible",
+   "integrity_screen": "2 rest on citation-integrity evidence external to the record text (C0865: unverifiable authorship, predatory venue; C1655: character-identical abstract across disjoint author teams)",
+   "readjudicated_upheld": "12 disputes re-adjudicated against the full-text dossiers and upheld: T0046, C0453, C0653 (learned component does continuous motion/mission control, not a discrete scheduling decision); C1542, C0724, C0935, C1257 (learned component predicts or estimates rather than making the scheduling decision); S0198, C0551 (unevaluated framework or position papers); S0226, S0227 (per-component intervention timing without schedule, assignment, or resource structure, the documented T0057 boundary); S0233 (spatial facility layout, not scheduling)",
+   "overturned": 0
+  },
+  "note": "The earlier 15-record random audit (2026-07-17) had already reinstated the 2 disputed exclusions it surfaced (C1315, C0129); this full-coverage audit runs on the corrected corpus and overturned no exclusion. The two reports-not-retrieved reclassifications of 2026-07-20 postdate this audit and raise the exclusion ledger from 83 to 85."
+ },
+ "pass1_dual_screen": {
+  "date": "2026-07-20",
+  "protocol": "A second coder independently re-screened a seeded random sample (Python random.Random(20260720).sample, n=200) of the 1,655 pass-1 title/abstract records under the archived rulebook, blind to all recorded decisions.",
+  "n": 200,
+  "sample_composition_recorded": {
+   "exclude": 167,
+   "include": 22,
+   "unsure_fulltext": 11
+  },
+  "agreement_three_category": "187/200 (93.5%)",
+  "kappa_three_category": 0.76,
+  "agreement_screen_in_vs_exclude": "191/200 (95.5%)",
+  "kappa_screen_in_vs_exclude": 0.83,
+  "disagreements": 13,
+  "disposition": "No adjudication changed final corpus membership. Pipeline-resolved: C0960, C0997, S0261, C1954, C0169 were later excluded at the full-text stage for the very concerns the second coder raised, and C1753 was integrity-excluded; C1321 was promoted and is included, as the second coder read it. C0827 is a Figshare data artifact of C0575, which the corpus includes. C0713 (included) was disputed as cross-sector; inclusion upheld on full-text evidence, and the cross-sector pooling is now stated in its coded record. C1316 (title-only) had its abstract retrieved during this audit and was recoded at abstract level, reassigning it L1->L2. S0289 and C1259 remain excluded under the domain rule (no built-environment framing in the record text); S0289 is flagged for an optional author full-text check. C1779 stays excluded on the recorded full-text rationale."
+ },
+ "title_only_upgrade": {
+  "date": "2026-07-20",
+  "record": "C1316",
+  "action": "Abstract retrieved verbatim from the RePEc mirror of the Springer chapter abstract; record upgraded to abstract-level coding; layer reassigned L1 -> L2 (work packages explicitly span production, transportation, and on-site assembly of industrialized construction); an independent blind coder reproduced the recode (layer, problem class, B=1 under the vagueness rule, E=0, D=0, simulation).",
+  "remaining_title_only": "C0465 and C0748 were subsequently (2026-07-20) reclassified as PRISMA reports-not-retrieved exclusions; see prisma_ledger.json not_retrievable_note."
+ },
+ "top_tier_deployed_dual_coding": {
+  "date": "2026-07-20",
+  "protocol": "Blind independent second coding of the five top-tier or deployed studies not already dual-coded in the gain set, reliability sample, or critical-records set (C0408, C0665, C1660, S0158, S0242), on layer, problem class, strongest comparator, B/E/D, and deployment level. With this pass every study reaching the top tier of any rubric (B, E, or D = 3) or deployed at pilot/field level has been coded by two people.",
+  "agreement": {
+   "layer": "5/5",
+   "deployment_level": "5/5",
+   "rubric_B": "3/5"
+  },
+  "disagreements": [
+   {
+    "id": "C0408",
+    "field": "rubric_E",
+    "primary": 3,
+    "second": 0,
+    "adjudication": "primary upheld: full text (Section 5) reports held-out instances, size generalization, a statistical test, and an ablation (evaluation_protocol coded accordingly); the second coder worked from a 6000-character excerpt that truncated Section 5."
+   },
+   {
+    "id": "C0665",
+    "field": "rubric_B",
+    "primary": 2,
+    "second": 1,
+    "adjudication": "primary upheld; the difference is one tier and C0665's evaluation is already flagged in the main text as fragile (placeholder figures, missing hyperparameters). Not a deployed study, so no effect on the empty cell."
+   },
+   {
+    "id": "C0665",
+    "field": "rubric_E",
+    "primary": 3,
+    "second": 1,
+    "adjudication": "primary upheld: source_note cites paired t-tests p<0.01 plus held-out and distribution-shift evidence; truncated excerpt for the second coder."
+   },
+   {
+    "id": "C1660",
+    "field": "rubric_E",
+    "primary": 3,
+    "second": 2,
+    "adjudication": "primary upheld: held-out (100 arrivals x300), due-date-tightness distribution shift, and multiple seeds are in Section 5, beyond the excerpt."
+   },
+   {
+    "id": "C1660",
+    "field": "rubric_D",
+    "primary": 1,
+    "second": 0,
+    "adjudication": "primary upheld: instances are calibrated to precast production (D=1), a distinction not visible in the excerpt."
+   },
+   {
+    "id": "S0158",
+    "field": "rubric_B",
+    "primary": 2,
+    "second": 3,
+    "adjudication": "primary upheld: the strict B=3 bar requires a full suite (tuned rules AND an exact/metaheuristic AND, where one exists, a prior learned method); S0158 benchmarks against an exact MILP (SDDiP) but lacks the tuned-rule and prior-learned components, so B=2. The second coder read the exact-solver comparator alone as B=3."
+   },
+   {
+    "id": "S0158",
+    "field": "rubric_E",
+    "primary": 3,
+    "second": 2,
+    "adjudication": "primary upheld: out-of-sample, diverse topologies (distribution shift), and scenario-averaged with standard deviation (seeds) are reported; truncated excerpt."
+   }
+  ],
+  "outcome": "No coded value changed. Layer and deployment agreed for all five, so the central empty-cell finding (no pilot/field-deployed study faced a strong baseline) rests on no contested code; all five re-coded studies are simulation-only. The rubric disagreements were mostly on evaluation rigor and trace to the second coder scoring from a shorter excerpt than the primary full text, which is documented per record. The single baseline-tier disagreement that went the other way (S0158, second coder more generous) is a rubric-interpretation difference resolved by the stated full-suite definition of B=3."
+ }
+}

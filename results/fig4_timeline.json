@@ -1,0 +1,73 @@
+{
+ "milestones": [
+  {
+   "label": "L2D (learn to dispatch, JSSP)",
+   "year": 2020,
+   "ref": "zhang2020l2d"
+  },
+  {
+   "label": "GNN dispatcher for FJSP",
+   "year": 2023,
+   "ref": "song2023fjsp"
+  },
+  {
+   "label": "Dual-attention (DANIEL)",
+   "year": 2023,
+   "ref": "wang2023daniel"
+  },
+  {
+   "label": "Attention for routing (neural CO)",
+   "year": 2019,
+   "ref": "kool2019attention"
+  },
+  {
+   "label": "Architecture re-examination (ReSched)",
+   "year": 2026,
+   "ref": "resched2026"
+  }
+ ],
+ "domain_firsts": {
+  "first_gnn_domain": 2022,
+  "first_attention_domain": 2023,
+  "first_marl_domain": 2021,
+  "first_llm_domain": 2023,
+  "first_drl_domain": 2021
+ },
+ "per_year_layer": {
+  "2020": {
+   "L1": 0,
+   "L2": 0,
+   "L3": 1
+  },
+  "2021": {
+   "L1": 2,
+   "L2": 1,
+   "L3": 4
+  },
+  "2022": {
+   "L1": 4,
+   "L2": 1,
+   "L3": 5
+  },
+  "2023": {
+   "L1": 6,
+   "L2": 3,
+   "L3": 7
+  },
+  "2024": {
+   "L1": 9,
+   "L2": 5,
+   "L3": 4
+  },
+  "2025": {
+   "L1": 21,
+   "L2": 9,
+   "L3": 8
+  },
+  "2026": {
+   "L1": 21,
+   "L2": 7,
+   "L3": 9
+  }
+ }
+}

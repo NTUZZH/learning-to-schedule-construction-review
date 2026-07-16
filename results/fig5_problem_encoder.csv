@@ -1,0 +1,7 @@
+problem_class,CNN,GAT,GNN,MLP,NR,attention,hybrid,none
+FJSP-family,0,0,0,2,2,0,1,0
+RCPSP-family,3,1,5,5,12,0,8,4
+custom,5,0,3,17,16,5,2,10
+dispatching-routing,0,0,1,5,9,1,0,1
+flowshop,0,0,1,4,2,0,0,0
+parallel-machine,1,0,0,1,0,0,0,0

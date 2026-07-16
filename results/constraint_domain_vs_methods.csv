@@ -1,0 +1,16 @@
+constraint,domain_share,methods_share
+precedence,0.488,0.0
+resource-capacity,0.772,0.0
+max-time-lags,0.024,0.0
+min-time-lags,0.047,0.0
+multi-skill,0.094,0.0
+calendars,0.031,0.0
+setup-times,0.031,0.0
+transport,0.244,0.0
+spatial,0.291,0.0
+multi-project,0.118,0.0
+due-dates-SLA,0.197,0.0
+stochastic-durations,0.244,0.0
+dynamic-arrivals,0.134,0.0
+disruptions-rescheduling,0.22,0.0
+mold-buffer-curing,0.055,0.0

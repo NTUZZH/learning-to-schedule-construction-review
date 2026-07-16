@@ -1,0 +1,11 @@
+,0
+none,10
+random,10
+single-untuned-PDR,23
+multiple-PDRs,27
+tuned-rules,11
+metaheuristic,46
+exact-CP-MILP,12
+commercial-tool,5
+other-DRL,33
+human-planner,15

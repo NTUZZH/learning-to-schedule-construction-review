@@ -1,0 +1,9 @@
+training_algo,count
+NR,34
+PPO,26
+DQN,24
+custom,20
+double-DQN,13
+Q-learning-tabular,5
+A3C,3
+SAC,2

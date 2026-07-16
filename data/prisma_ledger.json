@@ -1,0 +1,98 @@
+{
+ "identified_total_records": 2259,
+ "identified_by_source": {
+  "openalex": 1756,
+  "s2": 171,
+  "arxiv": 332
+ },
+ "after_dedup_unique": 1963,
+ "duplicates_removed": 296,
+ "domain_track": 1366,
+ "methods_track": 597,
+ "note": "counts before Pass-1 title/abstract screening",
+ "snowball_it1_raw": 2595,
+ "snowball_it1_new_unique": 2213,
+ "snowball_it1_domain_screened": 289,
+ "pass1_screened_records": 1655,
+ "pass1_include": 149,
+ "pass1_exclude": 1452,
+ "pass1_borderline_promoted_fulltext": 54,
+ "pass1_exclusion_reasons": {
+  "NOT-RESEARCH": 44,
+  "OUT-DOMAIN": 837,
+  "OUT-DECISION": 475,
+  "CONTINUOUS-CONTROL": 22,
+  "OUT-METHOD": 67,
+  "DUPLICATE": 5,
+  "LANGUAGE": 2
+ },
+ "pass1_include_by_layer": {
+  "L1": 80,
+  "L3": 40,
+  "L2": 29
+ },
+ "snowball_it2_raw": 663,
+ "snowball_it2_new_unique": 477,
+ "snowball_it2_domain_net_screened": 67,
+ "snowball_it2_included": 7,
+ "snowball_it2_included_by_layer": {
+  "L1": 0,
+  "L2": 1,
+  "L3": 6
+ },
+ "snowball_it3_raw": 71,
+ "snowball_it3_new_unique": 55,
+ "snowball_it3_domain_net_screened": 2,
+ "snowball_it3_included": 2,
+ "snowball_it3_included_by_layer": {
+  "L1": 0,
+  "L2": 1,
+  "L3": 1
+ },
+ "snowball_it3_note": "Confirmatory third iteration seeded from the 7 iteration-2 inclusions (run 2026-07-13). Of 71 unique returned records, 55 were new against all prior pools; screening found 2 in-scope studies (T0056 robot-prefab assembly DRL, conference paper missed by keyword search; T0057 network-asset intervention-timing imitation, JCEM), both within already-covered themes (L2 robot assembly; L3 intervention planning / imitation learning). The remaining 53 were out of scope (no learned scheduling component, transit operations, perception, robotics motion planning, generic LLM/robotics method papers) or fed the methods-track pool.",
+ "saturation": {
+  "rule": "stop when a full snowball iteration yields about 5% or fewer new inclusions and surfaces no new problem class, method family, or application layer",
+  "it1_included_new": "~40 (>5%, iteration continued)",
+  "it2_included_new": 7,
+  "it2_yield_pct_of_corpus": 5.5,
+  "it3_included_new": 2,
+  "it3_yield_pct_of_corpus": 1.5,
+  "decision": "SATURATED after it3",
+  "rationale": "it2 yield (7 = 5.5% of the then-current corpus) sat at the rule's boundary and contained only already-covered themes; a confirmatory third iteration yielded 2 inclusions (1.5% of the final corpus), again entirely within covered themes (L2 robot prefab assembly; L3 infrastructure intervention planning), meeting the stopping rule. Two snowball iterations plus multi-source primary search preceded it3."
+ },
+ "domain_corpus_final": 127,
+ "included_final_by_layer": {
+  "L1": 63,
+  "L2": 26,
+  "L3": 38
+ },
+ "methods_corpus_final": 60,
+ "full_text_assessed": 272,
+ "pass2_excluded_total": 85,
+ "post_coding_quality_exclusions": [
+  "C0865 (predatory venue, no author)",
+  "S0267 (no resolvable id)",
+  "S0284 (no resolvable id)"
+ ],
+ "pass2_routed_to_methods_corpus": 60,
+ "duplicate_report_exclusions": {
+  "S0196": "C0797",
+  "C0966": "C0230",
+  "C0503": "C0092",
+  "C0930": "C0575",
+  "C0708": "S0228",
+  "C0912": "S0228",
+  "C0504": "C0091",
+  "C1145": "C0509",
+  "C1671": "C1265"
+ },
+ "duplicate_audit_note": "2026-07-10 duplicate audit: nine records were multiple reports of already-included studies (preprint/published pairs, conference precursors, one supplementary data object, one arXiv companion); each is excluded at pass 2 with reason DUPLICATE-REPORT and counted once under its canonical id. Full-text accounting closes exactly: 270 assessed = 128 included + 82 excluded + 60 routed to the methods-track corpus.",
+ "fulltext_rescreen_note": "2026-07-16: author-supplied full texts (institutional access) were attached for 78 previously abstract/title-coded records and all were recoded from full text; one record (C0637) failed the discrete-scheduling scope test at full text (the paper states its focus is planning, not scheduling) and moved to the excluded set with reason OUT-DECISION. Full-text accounting after re-screening: 272 assessed = 129 included + 83 excluded + 60 routed to the methods-track corpus. 2026-07-17: two further Layer-3 records (C1753, C1655) were excluded under the citation-integrity screen (verbatim-identical abstracts across disjoint author teams at the same publisher; see integrity_exclusions_note), so the final accounting is 272 assessed = 127 included + 85 excluded + 60 routed to the methods-track corpus.",
+ "integrity_exclusions_note": "Two Layer-3 records (C1753, C1655) were excluded on 17 July 2026 under the citation-integrity screen: their abstracts are verbatim identical across fully disjoint author teams at the same publisher, and one record's title does not describe its own abstract. Reason code INTEGRITY-EXCLUDE in the coded database; counts above reflect the exclusion (129 -> 127; pass-2 excluded 83 -> 85).",
+ "screening_audit_note": "2026-07-17 screening audit: (a) an independent blind audit of 15 randomly sampled pass-2 exclusions upheld 13 and disputed 2; re-adjudication reinstated both (C1315, originally OUT-DOMAIN; C0129, originally OUT-DECISION), so the corpus is 129 = 64 L1 + 27 L2 + 38 L3 and pass-2 exclusions 83. (b) A recall audit of the snowballing keyword pre-net reviewed 150 randomly sampled discarded records (reconstructed from the cached raw API responses; ~9,600 unique raw records, ~6,400 discarded): 3 were flagged as plausibly in scope; on inspection one is already in the corpus via the primary search (C0728), one predates the review window (2015), and one (an Automation in Construction 2026 article) was screened from its title and subsequently confirmed out of scope from its abstract, obtained via institutional access: supervised treatment-type classification scored by decision accuracy, not a sequencing, assignment, or timing decision. 2026-07-20 full-coverage audit: (a) every pass-2 exclusion (n=83) blind re-screened at title/abstract level by a second coder under the archived rulebook: 42 upheld outright, 19 not assessable from record text (exclusions rest on documented full-text or integrity evidence), 22 disputes of which 8 are duplicate reports counted under canonical ids, 2 citation-integrity exclusions, and 12 re-adjudicated against full texts and upheld; zero overturned. (b) a second coder dual-screened a seeded random sample of 200/1,655 pass-1 records: three-category agreement 93.5% (kappa 0.76), screen-in-vs-exclude 95.5% (kappa 0.83); adjudication of the 13 disagreements changed no corpus membership. (c) title-only record C1316 upgraded to abstract-level coding (abstract retrieved from the public RePEc mirror) and reassigned L1 -> L2 per the production-transport-assembly rule; layer totals now 63/28/38. Full record: corpus/screening_audit.json.",
+ "not_retrievable_note": "2026-07-20: the two remaining title-only records (C0465, C0748) were reclassified from included to PRISMA reports-not-retrieved exclusions (potentially eligible on title; abstract and full text unretrievable through open or automated channels). Corpus 129 -> 127 = 63+26+38; pass-2 exclusions 83 -> 85; full-text-stage partition 272 = 127 + 85 + 60 unchanged. No rubric, gain, or reliability statistic is affected: neither record was scorable on any evidence field and neither carried a numeric gain.",
+ "reports_not_retrieved": 2,
+ "reports_assessed_eligibility": 270,
+ "excluded_after_assessment": 83,
+ "prisma_flow_note": "PRISMA 2020 flow (reports-not-retrieved separated from assessed-for-eligibility): full_text_assessed (272) = reports sought for retrieval; of these 2 could not be retrieved (title screened, no abstract or full text obtainable through open, API, or automated publisher channels); reports_assessed_eligibility (270) = 272 - 2 partitions as 270 = 127 included + 83 excluded after assessment + 60 methods-track. pass2_excluded_total (85) is the workbook exclusion count and equals 83 excluded-after-assessment + 2 not-retrieved."
+}

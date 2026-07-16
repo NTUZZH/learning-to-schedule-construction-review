@@ -1,0 +1,54 @@
+{
+ "report": {
+  "B": {
+   "n_both_scorable": 25,
+   "alpha_ordinal": 0.7720588235294118,
+   "exact_agreement": 0.72,
+   "within_one": 0.96,
+   "assessability_agreement": 0.9285714285714286,
+   "alpha_ci95": [
+    0.5,
+    0.93
+   ]
+  },
+  "E": {
+   "n_both_scorable": 26,
+   "alpha_ordinal": 0.8988095238095238,
+   "exact_agreement": 0.8461538461538461,
+   "within_one": 1.0,
+   "assessability_agreement": 0.9642857142857143,
+   "alpha_ci95": [
+    0.75,
+    0.98
+   ]
+  },
+  "D": {
+   "n_both_scorable": 27,
+   "alpha_ordinal": 0.9468916974442776,
+   "exact_agreement": 0.8888888888888888,
+   "within_one": 1.0,
+   "assessability_agreement": 1.0,
+   "alpha_ci95": [
+    0.84,
+    1.0
+   ]
+  }
+ },
+ "macros": {
+  "alphaB": "0.77",
+  "exactAgreeB": 72,
+  "alphaBLo": "0.50",
+  "alphaBHi": "0.93",
+  "alphaE": "0.90",
+  "exactAgreeE": 85,
+  "alphaELo": "0.75",
+  "alphaEHi": "0.98",
+  "alphaD": "0.95",
+  "exactAgreeD": 89,
+  "alphaDLo": "0.84",
+  "alphaDHi": "1.00",
+  "nReliabilitySample": 28,
+  "pctReliabilitySample": 22,
+  "alphaMean": "0.87"
+ }
+}
